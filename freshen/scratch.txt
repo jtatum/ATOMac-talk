@@ -1,0 +1,7 @@
+nosetests --with-freshen -v
+
+from steps.abstraction.workflowwindow import WorkflowWindow
+from steps import workflow
+
+workflow.window(None)
+workflow.scc.window

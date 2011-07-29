@@ -1,0 +1,12 @@
+from selectscreen import SelectScreen
+ss = SelectScreen.get()
+type(ss)
+
+ss.close()
+ss.choose().Press()
+
+from workflowwindow import WorkflowWindow
+window = WorkflowWindow.get()
+window.actions()
+window.Raise()
+window.double_click(window.speak_text())

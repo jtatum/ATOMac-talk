@@ -1,0 +1,35 @@
+import atomac
+atomac.launchAppByBundleId('com.apple.Automator')
+
+app = atomac.getAppRefByLocalizedName('Automator')
+app
+
+app.getBundleId()
+app = atomac.getAppRefByBundleId('com.apple.Automator')
+app
+
+app.AXChildren
+app.AXChildren[0].AXChildren
+app.AXChildren[0].AXChildren[6].AXChildren
+close=app.AXChildren[0].AXChildren[6].AXChildren[2]
+close
+
+help(app.findFirstR)
+
+close2=app.findFirstR(AXRole='AXButton', AXTitle='Close')
+close==close2
+
+app.buttonsR()
+app.buttonsR('Hide*')
+close3=app.buttonsR('Close')[0]
+close==close3
+
+close.AXTitle
+close.AXRole
+close.AXFocused
+
+close.AXFocused=True
+close.AXFocused
+
+close.Press()
+
