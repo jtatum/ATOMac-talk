@@ -36,6 +36,7 @@ except atomac.ErrorCannotComplete:
     # method to time out
     pass
 
+time.sleep(1)
 dialog = DialogBox.get()
 dialog.textarea().AXValue = "I'm sorry Dave, I'm afraid I can't do that."
 time.sleep(3)
