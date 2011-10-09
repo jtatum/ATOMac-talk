@@ -1,5 +1,3 @@
-Using step definitions from: 'steps/workflow'
-
 Feature: Creating workflows
     In order to automate applications
     As a Macintosh user
@@ -10,7 +8,7 @@ Feature: Creating workflows
         And an Ask for Text action
         And a Speak Text action
         When I click Run
-        And I enter "Hello" in the dialog
+        And I enter "Lettuce" in the dialog
         And I click OK in the dialog
         Then the workflow runs successfully within 6 seconds
 

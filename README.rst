@@ -1,5 +1,5 @@
 ====================================
-Baypiggies ATOMac talk - 29-Jul-2011
+ATOMac and BDD GUI testing in Python
 ====================================
 Files
 =====
@@ -10,6 +10,7 @@ The following files are included:
 * basic/ - basic usage of ATOMac (from part 2)
 * abstract/ - GUI abstraction layer (first part of part 3)
 * freshen/ - BDD on top of GUI abstraction layer (second part of part 3)
+* lettuce/ - BDD demonstrated in Lettuce (similar to Freshen)
 
 Each directory contains a scratch pad with code snippets in scratch.txt.
 
